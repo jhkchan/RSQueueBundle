@@ -17,7 +17,7 @@ declare(strict_types=1);
 
 namespace RSQueueBundle\Collector;
 
-use Exception;
+use Throwable;
 use RSQueue\Event\RSQueueProducerEvent;
 use RSQueue\Event\RSQueuePublisherEvent;
 use Symfony\Component\HttpFoundation\Request;
@@ -116,14 +116,14 @@ class RSQueueCollector extends DataCollector
      *
      * @param Request    $request
      * @param Response   $response
-     * @param \Exception $exception
+     * @param \Throwable $exception
      *
      * @api
      */
     public function collect(
         Request $request,
         Response $response,
-        Exception $exception = null
+        Throwable $exception = null
     ) {
     }
 
