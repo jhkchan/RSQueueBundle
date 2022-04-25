@@ -19,7 +19,7 @@
         "symfony/framework-bundle": "~3.0|^4.0|^5.0",
         "mmoreram/base-bundle": "^1.0.7",
         "mmoreram/symfony-bundle-dependencies": "^2.0.0",
-        "rsqueue/rsqueue": "^0.1.0"
+        "rsqueue/rsqueue": "master"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.6.4",
