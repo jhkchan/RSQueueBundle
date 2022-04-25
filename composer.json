@@ -17,8 +17,8 @@
         "symfony/http-foundation": "^3.0|^4.0|^5.0",
         "symfony/dependency-injection": "~3.0|^4.0|^5.0",
         "symfony/framework-bundle": "~3.0|^4.0|^5.0",
-        "mmoreram/base-bundle": "^1.0.7",
-        "mmoreram/symfony-bundle-dependencies": "^2.0.0",
+        "mmoreram/base-bundle": "^2.4",
+        "mmoreram/symfony-bundle-dependencies": "^2.3",
         "rsqueue/rsqueue": "master"
     },
     "require-dev": {
