@@ -25,6 +25,24 @@ use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
  */
 class RSQueueConfiguration extends BaseConfiguration
 {
+    public function getConfigTreeBuilder()
+    {
+        $treeBuilder = new TreeBuilder('rs_queue');
+        $rootNode = $treeBuilder->root($this->extensionAlias);
+        $this->setupTree($rootNode);
+
+        if ($this->mappingBagProvider instanceof MappingBagProvider) {
+            $this->addDetectedMappingNodes(
+                $rootNode,
+                $this
+                    ->mappingBagProvider
+                    ->getMappingBagCollection()
+            );
+        }
+
+        return $treeBuilder;
+    }
+
     /**
      * Configure the root node.
      *
