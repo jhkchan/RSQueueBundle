@@ -31,7 +31,12 @@ class RSQueueConfiguration extends BaseConfiguration
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder('rs_queue');
-        $rootNode = $treeBuilder->root($this->extensionAlias);
+        if (\method_exists($treeBuilder, 'getRootNode')) {
+            $rootNode = $treeBuilder->getRootNode();
+        } else {
+            // BC layer for symfony/config 4.1 and older
+            $rootNode = $treeBuilder->root($this->extensionAlias);
+        }
         $this->setupTree($rootNode);
 
         if ($this->mappingBagProvider instanceof MappingBagProvider) {
