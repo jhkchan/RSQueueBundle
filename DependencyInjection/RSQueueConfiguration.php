@@ -19,6 +19,9 @@ namespace RSQueueBundle\DependencyInjection;
 
 use Mmoreram\BaseBundle\DependencyInjection\BaseConfiguration;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
+use Symfony\Component\Config\Definition\Builder\TreeBuilder;
+
+use Mmoreram\BaseBundle\Mapping\MappingBagProvider;
 
 /**
  * Class RSQueueConfiguration.
