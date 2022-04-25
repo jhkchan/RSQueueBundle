@@ -28,6 +28,18 @@ use Mmoreram\BaseBundle\Mapping\MappingBagProvider;
  */
 class RSQueueConfiguration extends BaseConfiguration
 {
+    protected $extensionAlias;
+
+    protected $mappingBagProvider;
+
+    public function __construct(
+        string $extensionAlias,
+        MappingBagProvider $mappingBagProvider = null
+    ) {
+        $this->extensionAlias = $extensionAlias;
+        $this->mappingBagProvider = $mappingBagProvider;
+    }
+
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder('rs_queue');
