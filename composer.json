@@ -12,11 +12,11 @@
     ],
     "require": {
         "php": ">=7.1",
-        "symfony/config": "^3.0|^4.0",
-        "symfony/http-kernel": "^3.0|^4.0",
-        "symfony/http-foundation": "^3.0|^4.0",
-        "symfony/dependency-injection": "~3.0|^4.0",
-        "symfony/framework-bundle": "~3.0|^4.0",
+        "symfony/config": "^3.0|^4.0|^5.0",
+        "symfony/http-kernel": "^3.0|^4.0|^5.0",
+        "symfony/http-foundation": "^3.0|^4.0|^5.0",
+        "symfony/dependency-injection": "~3.0|^4.0|^5.0",
+        "symfony/framework-bundle": "~3.0|^4.0|^5.0",
         "mmoreram/base-bundle": "^1.0.7",
         "mmoreram/symfony-bundle-dependencies": "^2.0.0",
         "rsqueue/rsqueue": "^0.1.0"
